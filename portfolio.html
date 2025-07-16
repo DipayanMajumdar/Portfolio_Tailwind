@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-[#f9fafb]">
+  <!-- Navigation Bar -->
+  <header class="bg-gray-800 shadow-md fixed top-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-white">My Portfolio</h1>
+      <ul class="flex space-x-2 sm:space-x-4 md:space-x-8 text-sm md:text-base font-medium">
+        <li><a href="#home" class="hover:text-blue-400 text-white">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400 text-white">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 text-white">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 text-white">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home"
+    class="min-h-screen flex flex-col items-center justify-center text-center pt-20 bg-gradient-to-b from-blue-700 via-cyan-200  to-blue-100">
+    <img src="image1.png" alt="Profile" class="rounded-full w-32 h-36 md:w-64 md:h-72 mb-8" />
+    <h2 class="text-3xl md:text-5xl font-bold">Dipayan Majumdar</h2>
+    <p class="text-lg md:text-2xl mt-2 md:mt-4">Frontend Web Developer</p>
+    <p class="italic md:text-xl mt-1 md:mt-2">"Like a musician with notes, I build harmony with codes."</p>
+    <a href="#" class="mt-6 md:text-lg inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800">Download Resume</a>  <!-- link not added -->
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-14 px-6 bg-gradient-to-b from-white via-sky-100 to-white scroll-mt-20">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">About Me</h2>
+      <p class="mb-4">I'm a passionate frontend developer with a keen interest in responsive and accessible web design.
+        I love building things that live on the internet.</p>
+      <p class="mb-6">My goal is to become a full-stack developer and contribute to impactful open-source projects.</p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2 text-blue-600">Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>HTML</li>
+            <li>Tailwind CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2 text-blue-600">Education</h3>
+          <ul class="list-disc list-inside">
+            <li>B.Tech in Computer Science - NSEC</li>
+            <li>H.S. - WBCHSE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-gradient-to-b from-sky-50 to-blue-100 scroll-mt-20">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center text-blue-900">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project Card -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-transform hover:scale-105">
+          <a href="https://musicplayer17.vercel.app" target="_blank"
+            class="text-blue-800 font-semibold text-lg hover:text-red-700">
+            <img
+              src="https://raw.githubusercontent.com/DipayanMajumdar/Music_Player/refs/heads/main/png-transparent-google-play-music-media-player-mp3-player-music-material-miscellaneous-album-magenta-thumbnail.png"
+              alt="Music Player Logo" class="rounded mb-4 max-w-10">
+            Music Player</a>
+          <p class="text-sm my-2">HTML, CSS, JavaScript</p>
+          <a href="https://github.com/DipayanMajumdar/Music_Player" target="_blank"
+            class="text-blue-500 text-sm hover:text-red-700">View on GitHub</a>
+        </div>
+        <!-- Duplicate the above div and change content for 2 more projects -->
+        <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-transform hover:scale-105">
+          <a href="#" class="text-blue-800 font-semibold text-lg hover:text-red-700">
+            <img src="logo.png" alt="Portfolio Logo" class="rounded mb-4 max-w-10 p-1">
+            Portfolio Site</a>
+          <p class="text-sm my-2">HTML, Tailwind CSS</p>
+          <a href="https://github.com/DipayanMajumdar/Portfolio" target="_blank"
+            class="text-blue-500 text-sm hover:text-red-700">View on GitHub</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-transform hover:scale-105">
+          <a href="https://rakshasetu.vercel.app" target="_blank"
+            class="text-blue-800 font-semibold text-lg hover:text-red-700">
+            <img
+              src="https://raw.githubusercontent.com/rajdeepdas108/RakshaSetu/refs/heads/main/src/IMG-20250420-WA0009.jpg"
+              alt="RakshaSetu Logo" class="rounded mb-4 max-w-10">
+            RakshaSetu</a>
+          <p class="text-sm my-2">HTML, CSS</p>
+          <a href="https://github.com/rajdeepdas108/RakshaSetu" target="_blank"
+            class="text-blue-500 text-sm hover:text-red-700">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-10 px-4 bg-gradient-to-b from-white to-sky-50">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">Contact Me</h2>
+      <form class="space-y-3">
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded">
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded">
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea rows="5" placeholder="Message" class="w-full p-3 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800">Submit</button>
+      </form>
+      <div class="mt-10 flex justify-center space-x-3 md:space-x-10">
+        <a href="https://www.linkedin.com/in/dipayanmajumdar" target="_blank"
+          class="flex items-center text-blue-500"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4////gOLB44D6nTcsGIo33QHi/zTGd0B2YTiAPpYjHIHNAf/piQk6wGPW8f/rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts/m/SfxBMs5RupswBaACr+P47b/5zlG/5DyzZ/r/+8hNF7vuvP//nn3r0X6JhJ+0ccPrR+/+H7735jw9cf/n5v0D1Nuo5gBxQve06zR0AjoL7b7/+//zjN4bc+ScfaOeA33///k9Yfg4mDw7u/Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII="
+            alt="LinkedIn Logo" class="rounded h-7"></a>
+        <a href="https://github.com/DipayanMajumdar" target="_blank" class="flex items-center text-blue-500"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEX////4+Pi3ubtvcnZNUVU+Q0cpLjLr6+x3en0sMTYkKS59gIORk5aUl5n8/Pzw8PFTV1tbX2Pc3d5DSEzn5+g3PECLjpFKTlKFh4qxs7XCxMUuMze/wcLh4uPV1tZzd3o/Q0jOz9CmqKpjZ2qfoaTxAyfNAAABPUlEQVR4AW3TBYKDMBQE0AltAgzuzur9z7ibH5oKfWjc4UEFl6s2Rl8vgcJZGMX04iTEM5UaPomzHA+KkidVAa/WfKNpffMd32oKCHUlWfb27Q19ZSMVrNHGTMDckMtQLqSegdXGpvi3Sf93W9UudRby2WzsEgL4oMvwoqY1AsrQNfFipbXkCGh1BV6oT1pfRwvfOJlo9ZA5NAonStbmB1pawBuDTAgkX4MzV/eC2H3e0C7lk1aBEzd+7SpigJOZVoXx+J5UxzADil+8+KZYoRaK5y2WZxSdgm0j+dakzkIc2kzT6W3IcFnDTzdt4sKbWMqkpNl229IMsfMmg6UaMsJXmv4qCMXDoI4mO5oADwyFDnGoO3KI0jSHQ6E3eJum5TP4Y+EVyUOGXHZjgWd7ZEwOJzZRjbPQt7mF8P4AzsYZpmkFLF4AAAAASUVORK5CYII="
+            alt="LinkedIn Logo" class="rounded h-7"></a>
+        <a href="https://x.com/Dipayan787" target="_blank" class="flex items-center text-blue-500"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA/0lEQVR4AbXPIazCMACE4d+L2qoZFEGSIGcRc/gJJB5XMzGJmK9EN0HMi+qaibkKVF1txdQe4g0YzPK5yyWXHL9TaPNQ89LojH87N1rbJcXkMF4Fk31UMrf34hm14KUeoQxGArALHTMuQD2cAWQfJXOpgTbksGr9ng8qluShJTPhyCdx63POg7rEim95ZyR68I1ggQpnCEGwyPicw6hZtPEGmnhkycqOio1zm6XuFtyw5XDXfGvuau0dXHzJp8pfBPuhIXO9ZK5ILUCdSvLYMpc6ASBtl3EaC97I4KaFaOCaBE9Zn5jUsVqR2vcTJZO1DdbGoZryVp94Ka/mQfE7f2T3df0WBhLDAAAAAElFTkSuQmCC"
+            alt="LinkedIn Logo" class="rounded h-6"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-white py-6 bg-gray-800 mt-4 pt-6">
+    &copy; 2025 Dipayan Majumdar. All rights reserved.
+  </footer>
+</body>
+</html>
